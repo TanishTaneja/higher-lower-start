@@ -5,7 +5,7 @@ from replit import clear
 
 SCORE = 0
 
-
+#Game process using recursion
 def game_process():
     random_a = randint(0, len(data) - 1)
     random_b = randint(0, len(data) - 1)
@@ -15,7 +15,6 @@ def game_process():
             winner = following_a
         else:
             winner = following_b
-        print(f"{following_a} {following_b}")
         comparing_followers = str(input("Who has more followers? A or B\n"))
 
         if (comparing_followers == 'A'.lower() and winner == following_a or
